@@ -20,7 +20,7 @@ Marketing and enrollment site for the **AI Transformation Leadership Program**, 
 | Element | Destination |
 |---------|------------|
 | Apply Now buttons (×3) | https://forms.gle/gHGQpZ4cre87fkXv7 |
-| Contact email | info@aireadyleaders.com |
+| Contact email | info@aireadyleaders.org |
 
 ---
 
