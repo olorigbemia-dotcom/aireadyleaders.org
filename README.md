@@ -2,8 +2,8 @@
 
 Marketing and enrollment site for the **AI Transformation Leadership Program**, a cohort-based group coaching program for IT and technology professionals.
 
-**Live site:** https://www.aireadyleaders.com  
-**Contact:** info@aireadyleaders.com
+**Live site:** https://www.aireadyleaders.org  
+**Contact:** info@aireadyleaders.org
 
 ---
 
