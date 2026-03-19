@@ -247,6 +247,114 @@
   }
 
   /* ── NOT READY ──────────────────────────────────────────── */
+  /* ── START HERE / PLAYBOOK ─────────────────────────────── */
+  .start-here {
+    background: var(--navy);
+    border-top: 1px solid rgba(201,168,76,0.2);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    padding: 72px 0;
+  }
+  .start-here-inner {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 64px;
+    align-items: center;
+  }
+  .start-here-title {
+    font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.15;
+    margin: 0 0 20px;
+  }
+  .start-here-body {
+    font-size: 15px;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.75;
+    margin: 0 0 24px;
+  }
+  .playbook-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+  }
+  .playbook-bullets li {
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .playbook-bullets li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .btn-playbook {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 14px 28px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: opacity 0.2s;
+  }
+  .btn-playbook:hover { opacity: 0.88; }
+  .playbook-cover {
+    background: linear-gradient(160deg, #1a2e42 0%, #0D1B2A 100%);
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    padding: 40px 28px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+  .playbook-cover-label {
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .playbook-cover-title {
+    font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .playbook-cover-sub {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+  .playbook-cover-rule {
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 20px;
+  }
+  .playbook-cover-pages {
+    font-size: 11px;
+    color: rgba(201,168,76,0.7);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    .start-here-inner { grid-template-columns: 1fr; gap: 40px; }
+    .start-here-badge { order: -1; max-width: 240px; margin: 0 auto; }
+  }
+
   .not-ready { background: var(--cream); text-align: center; }
   .not-ready h2 {
     font-family: 'Playfair Display', serif;
@@ -715,6 +823,7 @@
 </head>
 <body>
 
+
 <!-- ── NAV ───────────────────────────────────────────────── -->
 <nav>
   <span class="org">AI Transformation Leadership Program</span>
@@ -726,7 +835,7 @@
     <a href="#investment">Investment</a>
     <a href="#faq">FAQ</a>
   </div>
-  <a href="https://forms.gle/gHGQpZ4cre87fkXv7" class="enroll-btn" target="_blank" rel="noopener">Apply Now</a>
+  <a href="https://forms.gle/gHGQpZ4cre87fkXv7" class="enroll-btn" target="_blank" rel="noopener">Join Waitlist</a>
 </nav>
 
 <!-- ── HERO ──────────────────────────────────────────────── -->
@@ -736,7 +845,7 @@
   <h1>You're Already Doing<br><span>AI Transformation</span> Work.<br>Now Let's Make It Visible.</h1>
   <p class="sub">The AI Transformation Leadership Program equips IT project and program managers with the governance frameworks, career assets, and AI leadership credentials to lead enterprise AI readiness — starting with the work you're already doing.</p>
   <div class="hero-ctas">
-    <a href="https://forms.gle/gHGQpZ4cre87fkXv7" class="btn-primary" target="_blank" rel="noopener">Apply for April 3 Cohort →</a>
+    <a href="https://forms.gle/gHGQpZ4cre87fkXv7" class="btn-primary" target="_blank" rel="noopener">Secure Your Spot →</a>
     <a href="#curriculum" class="btn-secondary">View Curriculum →</a>
   </div>
 </section>
@@ -1163,7 +1272,37 @@
       </div>
     </div>
     <div class="price-cta">
-      <a href="https://forms.gle/gHGQpZ4cre87fkXv7" target="_blank" rel="noopener">Apply for the Next Cohort →</a>
+      <a href="https://forms.gle/gHGQpZ4cre87fkXv7" target="_blank" rel="noopener">Join the Waitlist →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── START HERE / PLAYBOOK ──────────────────────────────── -->
+<section class="start-here">
+  <div class="container">
+    <div class="start-here-inner">
+      <div class="start-here-text">
+        <div class="section-label" style="color:var(--gold);letter-spacing:2px;font-size:10px;text-transform:uppercase;margin-bottom:12px;">Free Resource</div>
+        <h2 class="start-here-title">Not Sure Where You Stand?<br>Start Here.</h2>
+        <p class="start-here-body">The AI Pivot Playbook is a 6-page guide that shows experienced delivery professionals exactly how close they already are to leading AI transformation — and what the 30% gap actually looks like. Download it free before you read another word.</p>
+        <ul class="playbook-bullets">
+          <li>The Reframe — why you're mispositioned, not behind</li>
+          <li>The 70% Inventory — what you already bring to the table</li>
+          <li>The 30% Gap — the specific vocabulary and framing you're missing</li>
+          <li>The Translation Layer — how to make your existing work visible</li>
+          <li>Your Next Move — a decision framework, not a sales page</li>
+        </ul>
+        <a href="https://aireadyleaders.org/playbook" class="btn-playbook" target="_blank" rel="noopener">Download the AI Pivot Playbook →</a>
+      </div>
+      <div class="start-here-badge">
+        <div class="playbook-cover">
+          <div class="playbook-cover-label">FREE GUIDE</div>
+          <div class="playbook-cover-title">The AI Pivot<br>Playbook</div>
+          <div class="playbook-cover-sub">For IT Delivery Professionals</div>
+          <div class="playbook-cover-rule"></div>
+          <div class="playbook-cover-pages">6 Pages · Immediate Download</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1171,10 +1310,11 @@
 <!-- ── NOT READY ──────────────────────────────────────────── -->
 <section class="not-ready">
   <div class="container">
-    <h2>Not Ready to Apply Yet?</h2>
-    <p>Download the program brochure or connect with us on LinkedIn to follow the AI Ready Leaders community. When you're ready, we'll be here.</p>
+    <h2>Not Joining the Waitlist Today?</h2>
+    <p>Start with the free AI Pivot Playbook, download the full program brochure, or follow us on LinkedIn. When you're ready, the door is open.</p>
     <div class="not-ready-ctas">
-      <a href="https://subscribepage.io/aireadyleaders" class="btn-dark" target="_blank" rel="noopener">Download Brochure →</a>
+      <a href="https://aireadyleaders.org/playbook" class="btn-dark" target="_blank" rel="noopener">Download AI Pivot Playbook →</a>
+      <a href="https://subscribepage.io/aireadyleaders" class="btn-outline" target="_blank" rel="noopener">Download Brochure →</a>
       <a href="https://www.linkedin.com/company/ai-ready-leaders" class="btn-outline" target="_blank" rel="noopener">Follow on LinkedIn</a>
     </div>
   </div>
@@ -1205,7 +1345,7 @@
       </div>
       <div class="faq-item">
         <div class="faq-q">When does the next cohort begin?</div>
-        <div class="faq-a">Cohort dates are released on a rolling basis with limited enrollment per intake. Contact <a href="/cdn-cgi/l/email-protection#b0d9ded6dff0d1d9c2d5d1d4c9dcd5d1d4d5c2c39edfc2d7"><span class="__cf_email__" data-cfemail="f29b9c949db2939b809793968b9e979396978081dc9d8095">[email&#160;protected]</span></a> to be added to the priority notification list.</div>
+        <div class="faq-a">Cohort 1 launches June 2026. Enrollment is limited. <a href="https://forms.gle/gHGQpZ4cre87fkXv7" target="_blank" rel="noopener">Join the waitlist</a> to be first to receive your seat confirmation and cohort details.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Who is this program presented by?</div>
